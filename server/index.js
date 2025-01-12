@@ -4,11 +4,11 @@ const connectDB = require('./db');
 const compressRoutes = require('./routes/compress');
 
 const app = express();
-const corsOptions = {
-  origin: "https://frontend-71cd.onrender.com",
-}
+// const corsOptions = {
+//   origin: "https://frontend-71cd.onrender.com",
+// }
 // Middlewares
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
